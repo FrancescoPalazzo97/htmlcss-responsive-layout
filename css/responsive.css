@@ -1,6 +1,11 @@
 /* Soluzione qui */
 
+/* TABLET */
+
 @media screen and (min-width: 768px) {
+
+    /* HEADER */
+
     #topbar {
         justify-content: flex-start;
     }
@@ -13,10 +18,13 @@
         content: '(Dolce Tradizionale)';
     }
 
+    /* MAIN */
+
     .quick-notes ul {
         display: flex;
         flex-wrap: wrap;
     }
+
     .quick-notes li {
         width: calc(100% / 3);
         padding: 10px 30px;
@@ -33,5 +41,53 @@
     .presentation img {
         float: left;
         margin-right: 10px;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+
+    /* HEADER */
+
+    .recipe-name {
+        font-size: 34px;
+    }
+
+    /* MAIN */
+
+    .quick-notes ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .quick-notes li {
+        padding: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .recipe-card {
+        display: flex;
+    }
+
+    .recipe-video {
+        width: 70%;
+    }
+
+    .recipe-info {
+        width: 30%;
+    }
+
+    /* footer */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    address {
+        text-align: left;
     }
 }
