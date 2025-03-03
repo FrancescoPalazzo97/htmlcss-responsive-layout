@@ -1,2 +1,20 @@
 /* Soluzione qui */
 
+@media screen and (min-width: 768px) {
+    #topbar {
+        justify-content: flex-start;
+    }
+
+    .recipe-name::after{
+        content: '(Dolce Tradizionale)';
+    }
+
+    .quick-notes ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .quick-notes li {
+        width: calc(100% / 3);
+        padding: 10px 30px;
+    }
+}
