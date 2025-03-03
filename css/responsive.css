@@ -5,6 +5,10 @@
         justify-content: flex-start;
     }
 
+    .recipe-name {
+        font-size: 28px;
+    }
+
     .recipe-name::after{
         content: '(Dolce Tradizionale)';
     }
